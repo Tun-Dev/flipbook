@@ -10,9 +10,7 @@ function App() {
     const context = canvas.getContext("2d");
     const frameCount = 107;
     const currentFrame = (index) => {
-      return `/src/assets/imgs/ezgif-frame-${index
-        .toString()
-        .padStart(3, "0")}.png`; // 000, 001, 002, ..., 999, To padStart(3, "0") means 3 digits, and fill the rest with 0
+      return `/imgs/ezgif-frame-${index.toString().padStart(3, "0")}.png`; // 000, 001, 002, ..., 999, To padStart(3, "0") means 3 digits, and fill the rest with 0
     };
 
     // This is the first frame to load on the page
